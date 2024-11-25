@@ -46,6 +46,6 @@ func use_item(item: String):
 				print("You don't have a", item)
 				return
 		if item == "Potion":
-				stats["health" += 20
+				stats["health" += 20]
 				print("You used a Potion! Your health is now: ", stats["health"])
 				remove_item(item)
