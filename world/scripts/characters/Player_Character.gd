@@ -29,7 +29,7 @@ func add_item(item: String) -> bool:
 # function to remove items from inventory
 func remove_item(item: String) -> bool:
 		if item in inventory:
-				iventory.erase(item)
+				inventory.erase(item)
 				print(item, "Removed from inventory!")
 				return true
 		print(item, "not found in inventory!")
@@ -46,6 +46,6 @@ func use_item(item: String):
 				print("You don't have a", item)
 				return
 		if item == "Potion":
-				stats["health" += 20]
+				stats["health"] += 20
 				print("You used a Potion! Your health is now: ", stats["health"])
 				remove_item(item)
